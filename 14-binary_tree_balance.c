@@ -30,10 +30,10 @@ size_t binary_tree_height(const binary_tree_t *tree)
 {
 	if (tree)
 	{
-		size_t l = 0, jhay5 = 0;
+		size_t l = 0, mhay = 0;
 
 		l = tree->left ? 1 + binary_tree_height(tree->left) : 1;
-		jhay5 = tree->right ? 1 + binary_tree_height(tree->right) : 1;
-		return ((l > jhay5) ? l : jhay5
+		mhay = tree->right ? 1 + binary_tree_height(tree->right) : 1;
+		return ((l > mhay) ? l : mhay);
 	return (0);
 }
